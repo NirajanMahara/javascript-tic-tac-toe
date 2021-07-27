@@ -62,6 +62,18 @@ body {
   color: gray;
 }
 
+.player-x {
+  flex: 1;
+  border-bottom: 5px solid gray;
+  padding-bottom: 8px;
+}
+
+.player-o {
+  flex: 1;
+  border-bottom: 5px solid gray;
+  padding-bottom: 8px;
+}
+
 .board {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
