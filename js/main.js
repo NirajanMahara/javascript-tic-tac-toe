@@ -7,6 +7,6 @@ let gameView = new GameView();
 let tiles = document.querySelectorAll('.board__tile');
 tiles.forEach((tile) => {
   tile.addEventListener('click', () => {
-    console.log('🖱 Tile clicked 💥');
+    console.log(tile.dataset.index);
   });
 });
