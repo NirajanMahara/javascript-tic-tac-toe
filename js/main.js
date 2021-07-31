@@ -17,3 +17,5 @@ console.log(game.board);
 game.nextTurn();
 game.makeMove(8);
 console.log(game.board);
+
+gameView.updateBoard(game);
