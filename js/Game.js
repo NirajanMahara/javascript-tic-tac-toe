@@ -14,12 +14,17 @@ export default class Game {
   }
 
   makeMove(i) {
+    if (this.endOfGame()) {
+      return;
+    }
     if (this.board[i]) {
       return;
     }
     this.board[i] = this.turn;
     let winningCombination = this.findWinningCombination();
-    console.log('🏆 This is winner: 🎉', winningCombination);
+    if (!winningCombination) {
+      this.nextTurn();
+    }
   }
 
   findWinningCombination() {
@@ -46,5 +51,14 @@ export default class Game {
       }
     }
     return null;
+  }
+
+  endOfGame() {
+    let winningCombination = this.findWinningCombination();
+    if (winningCombination) {
+      return true;
+    } else {
+      return false;
+    }
   }
 }
