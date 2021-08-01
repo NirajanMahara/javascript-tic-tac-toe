@@ -128,3 +128,8 @@ body {
 .tile-o {
   color: purple;
 }
+
+.tile-winner span {
+  color: gray;
+  font-weight: bold;
+}
