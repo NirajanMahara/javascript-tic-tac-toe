@@ -3,8 +3,12 @@ export default class GameView {
     this.updateTurn(game);
     for (let i = 0; i < game.board.length; i++) {
       const tile = document.querySelector(`.board__tile[data-index='${i}']`);
-      console.log(tile);
-      tile.textContent = game.board[i];
+
+      let tileType = game.board[i] == 'X' ? 'tile-x' : 'tile-o';
+
+      tile.innerHTML = `<span class="${tileType}">${
+        game.board[i] ? game.board[i] : ' '
+      }</span>`;
     }
   }
 

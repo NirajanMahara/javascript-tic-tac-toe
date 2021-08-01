@@ -120,3 +120,11 @@ body {
   background: black;
   color: white;
 }
+
+.tile-x {
+  color: green;
+}
+
+.tile-o {
+  color: purple;
+}
