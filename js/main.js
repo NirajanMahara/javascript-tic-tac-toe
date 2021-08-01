@@ -7,6 +7,12 @@ let gameView = new GameView();
 let tiles = document.querySelectorAll('.board__tile');
 tiles.forEach((tile) => {
   tile.addEventListener('click', () => {
-    console.log(tile.dataset.index);
+    onTileClick(tile.dataset.index);
   });
 });
+
+function onTileClick(i) {
+  game.makeMove(i);
+  gameView.updateBoard(game);
+  game.nextTurn();
+}
