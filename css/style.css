@@ -68,10 +68,22 @@ body {
   padding-bottom: 8px;
 }
 
+.player-x.active {
+  color: green;
+  border-color: green;
+  font-weight: bold;
+}
+
 .player-o {
   flex: 1;
   border-bottom: 5px solid gray;
   padding-bottom: 8px;
+}
+
+.player-o.active {
+  color: purple;
+  border-color: purple;
+  font-weight: bold;
 }
 
 .board {
