@@ -1,16 +1,24 @@
 export default class GameView {
-  constructor() {
-    console.log('💻 init GameView 💥');
-  }
-
   updateBoard(game) {
-    console.log('🎁 This board is within GameView 💻');
-    console.log(game.board);
-
+    this.updateTurn(game);
     for (let i = 0; i < game.board.length; i++) {
       const tile = document.querySelector(`.board__tile[data-index='${i}']`);
       console.log(tile);
       tile.textContent = game.board[i];
+    }
+  }
+
+  updateTurn(game) {
+    let playerX = document.querySelector('.player-x');
+    let playerO = document.querySelector('.player-o');
+
+    playerX.classList.remove('active');
+    playerO.classList.remove('active');
+
+    if (game.turn == 'X') {
+      playerX.classList.add('active');
+    } else {
+      playerO.classList.add('active');
     }
   }
 }
