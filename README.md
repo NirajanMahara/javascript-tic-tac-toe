@@ -36,6 +36,13 @@ and more..
 ![6 win_combination](https://user-images.githubusercontent.com/69881638/127759322-df192cb3-a8c6-4f47-827f-241f9b6a4081.png)
 ![7 new game buttonm](https://user-images.githubusercontent.com/69881638/127759327-81b32169-24e9-4e3f-9840-1bc32ff3a712.png)
 
+## Colorful Mode
+
+![image](https://user-images.githubusercontent.com/69881638/127951232-ee5070b0-642c-416a-849f-cc808c79161a.png)
+
+## Dark Mode
+
+![image](https://user-images.githubusercontent.com/69881638/127951145-5f8792bb-b742-41b3-806f-b993c755feb4.png)
 
 ---
 
